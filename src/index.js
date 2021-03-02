@@ -3,27 +3,26 @@ import './index.css';
 import store from "./redux/redux-store";
 import ReactDOM from 'react-dom';
 import App from './App';
-
-
-// import {addPost, updateNewMessageText, updateNewPostText} from './redux/state';
-// import {addMessageText} from "./redux/state";
+import {Provider} from "react-redux";
 
 
 
 let rerenderEntireThree = (state) => {
 		ReactDOM.render(
 				<React.StrictMode>
-						<App state={state} store={store} dispatch={store.dispatch.bind(store)}
-						/>
+						<Provider store={store}>
+						<App />
+						</Provider>
 				</React.StrictMode>,
 				document.getElementById('root')
 		);
 };
+// state={state} store={store} dispatch={store.dispatch.bind(store)} v App
 
 
-rerenderEntireThree(store.getState())
+// rerenderEntireThree(store.getState())
+rerenderEntireThree();
 
 store.subscribe( () => {
-		let state = store.getState();
-		rerenderEntireThree(state);
+		rerenderEntireThree();
 });

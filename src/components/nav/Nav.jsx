@@ -5,7 +5,7 @@ import styleNav from "./Nav.module.css";
 
 
 const Nav = (props) => {
-		 let friendsElement = props.sidebar.friends.map(friend => <NavFriend name={friend.name} />);
+		 let friendsElement = props.friends.map(friend => <NavFriend name={friend.name} />);
 		return (
 				<div>
 						<nav className={styleNav.nav}>
