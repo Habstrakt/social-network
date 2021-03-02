@@ -1,0 +1,23 @@
+.nav {
+    grid-area: nav;
+    background-color: darkcyan;
+    padding: 20px;
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+}
+
+.item a.activeLink {
+    color: gold;
+}
+
+.nav .friendList {
+    display: flex;
+}
+
+.friendList .friendItem {
+    padding-right: 5px;
+}
+
