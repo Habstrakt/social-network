@@ -1,7 +1,6 @@
 import React from "react";
 import styleNav from "../Nav.module.css";
 import {NavLink} from "react-router-dom";
-import NavFriend from "../NavFriend/NavFriend";
 
 const NavItem = (props) => {
 

@@ -6,23 +6,15 @@ import App from './App';
 import {Provider} from "react-redux";
 
 
-
-let rerenderEntireThree = (state) => {
-		ReactDOM.render(
-				<React.StrictMode>
-						<Provider store={store}>
+ReactDOM.render(
+		<React.StrictMode>
+				<Provider store={store}>
 						<App />
-						</Provider>
-				</React.StrictMode>,
-				document.getElementById('root')
-		);
-};
-// state={state} store={store} dispatch={store.dispatch.bind(store)} v App
+				</Provider>
+		</React.StrictMode>,
+		document.getElementById('root')
+);
 
 
-// rerenderEntireThree(store.getState())
-rerenderEntireThree();
 
-store.subscribe( () => {
-		rerenderEntireThree();
-});
+

@@ -2,11 +2,12 @@ import React from 'react';
 import styleDialog from './Dialogs.module.css';
 import Message from "./Message/Message";
 import DialogItem from "./DialogItem/DialogItem";
-import {sendMessageCreator, updateNewMessageBodyCreator} from "../../redux/dialogs-reducer";
 
 
 const Dialogs = (props) => {
 		let state = props.dialogsPage;
+
+
 
 		let dialogsElement =
 				state.dialogs.map(dialog => <DialogItem name={dialog.name} id={dialog.id} img={dialog.img} />);
@@ -27,9 +28,6 @@ const Dialogs = (props) => {
 		let onMessageChange = (e) => {
 				let body = e.target.value;
 				props.updateNewMessageBody(body);
-				// let text = addMessageElement.current.value;
-				// let action = { type: 'UPDATE-NEW-MESSAGE-TEXT', newMessage: text }
-				// props.dispatch(action);\
 		};
 
 
@@ -51,7 +49,6 @@ z
 								</div>
 								<div>
 										<button onClick={addMessage} >Add Message</button>
-
 								</div>
 						</div>
 				</div>

@@ -1,8 +1,8 @@
 let initialState = {
 		friends: [
-				{name: 'Zalupkin'},
-				{name: 'Zelibobik'},
-				{name: 'Chert'}
+				{name: 'Zalupkin', id: 1},
+				{name: 'Zelibobik', id: 2},
+				{name: 'Chert', id: 3}
 		]
 };
 

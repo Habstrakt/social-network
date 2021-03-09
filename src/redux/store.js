@@ -27,15 +27,15 @@ let store = {
 								{id: 4, name: 'zeliboba', img: 'https://html5css.ru/w3images/avatar2.png'},
 								{id: 5, name: 'valera', img: 'https://html5css.ru/w3images/avatar2.png'},
 						],
-						newMessageText: '' // newMessageBody
+						//newMessageText: '' // newMessageBody
 				},
 
 				sidebar: {
-						friends: [
-								{name: 'Zalupkin'},
-								{name: 'Zelibobik'},
-								{name: 'Chert'}
-						]
+						// friends: [
+						// 		{name: 'Zalupkin'},
+						// 		{name: 'Zelibobik'},
+						// 		{name: 'Chert'}
+						// ]
 				},
 		},
 		_callSubscriber() {
