@@ -1,23 +1,21 @@
 import React from "react";
 import styles from "./Users.module.css";
-import userPhoto from "../../assets/img/avatar.jpg";
+import * as axios from "axios";
+import userPhoto from '../../assets/img/avatar.jpg';
 
-let Users = (props) => {
-
-		let pagesCount = Math.ceil(props.totalUsersCount / props.pageSize);
-		let pages = [];
-
-		for (let i = 1; i <= pagesCount; i++) {
-				pages.push(i);
+let UsersFunction = (props) => {
+		let getUsers = () => {
+				if (props.users.length === 0) {
+						axios.get('https://social-network.samuraijs.com/api/1.0/users')
+								.then(response => {
+										props.setUsers(response.data.items);
+								});
+				}
 		}
 
+
 		return <div>
-				<div>
-						{pages.map(page => {
-								return <span className={props.currentPage === page ? styles.selectedPage : ''}
-														 onClick={(e) => {props.onPageChanged(page);}}>{page}</span>
-						})}
-				</div>
+				<button onClick={getUsers}>GetUsers</button>
 				{
 						props.users.map(user => <div key={user.id}>
 						<span>
@@ -31,7 +29,7 @@ let Users = (props) => {
 														: <button onClick={ () => {props.follow(user.id)} }>Follow</button> }
 										</div>
 						</span>
-								<span>
+						<span>
 										<span>
 												<div>{user.name}</div>
 												<div>{user.status}</div>
@@ -46,4 +44,4 @@ let Users = (props) => {
 		</div>
 }
 
-export default Users;
+export default UsersFunction;
