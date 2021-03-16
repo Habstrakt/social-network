@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Users.module.css";
 import userPhoto from "../../assets/img/avatar.jpg";
 import {NavLink} from "react-router-dom";
+import * as axios from "axios";
 
 let Users = (props) => {
 
@@ -12,11 +13,14 @@ let Users = (props) => {
 				pages.push(i);
 		}
 
+
 		return <div>
 				<div>
 						{pages.map(page => {
 								return <span className={props.currentPage === page ? styles.selectedPage : ''}
-														 onClick={(e) => {props.onPageChanged(page);}}>{page}</span>
+														 onClick={(e) => {
+																 props.onPageChanged(page);
+														 }}>{page}</span>
 						})}
 				</div>
 				{
@@ -24,14 +28,42 @@ let Users = (props) => {
 						<span>
 										<div>
 												<NavLink to={'/profile/' + user.id}>
-												<img src={user.photos.small !=null ? user.photos.small : userPhoto}
+												<img src={user.photos.small != null ? user.photos.small : userPhoto}
 														 className={styles.userPhoto}/>
 												</NavLink>
 										</div>
 										<div>
-												{ user.followed ?
-														<button onClick={ () => {props.unfollow(user.id)} } >unFollow</button>
-														: <button onClick={ () => {props.follow(user.id)} }>Follow</button> }
+												{user.followed ?
+														<button onClick={() => {
+																axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${user.id}`,
+																		{
+																				withCredentials: true,
+																				headers: {
+																						"API-KEY": "0901725d-d6e7-40d7-a7ec-4ae94c627b77"
+																				}
+																		})
+																		.then(response => {
+																				if (response.data.resultCode === 0) {
+																						props.unfollow(user.id);
+																				}
+																		});
+
+														}}>Отписка</button>
+														: <button onClick={() => {
+																axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${user.id}`, {},
+																		{
+																				withCredentials: true,
+																				headers: {
+																						"API-KEY": "0901725d-d6e7-40d7-a7ec-4ae94c627b77"
+																				}
+																		})
+																		.then(response => {
+																				if (response.data.resultCode === 0) {
+																						props.follow(user.id);
+																				}
+																		});
+
+														}}>Подписка</button>}
 										</div>
 						</span>
 								<span>
