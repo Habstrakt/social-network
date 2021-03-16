@@ -1,14 +1,14 @@
 import React from "react";
 import {connect} from "react-redux";
 import {
-		followActionCreator,
-		setCurrentPageActionCreator,
-		setUsersActionCreator, setUsersTotalCount, toggleIsFetchingActionCreator,
-		unfollowActionCreator
+		follow,
+		setCurrentPage,
+		setUsers, setTotalUsersCount, toggleIsFetching,
+		unfollow
 } from "../../redux/users-reducer";
 import * as axios from "axios";
 import Users from "./Users";
-import preloader from "../../assets/img/preloader.svg"
+import Preloader from "../common/preloader/Preloader";
 
 
 class UsersContainer extends React.Component {
@@ -35,7 +35,7 @@ class UsersContainer extends React.Component {
 
 		render() {
 				return <>
-						{ this.props.isFetching ? <div style={{backgroundColor: 'white'} }><img src={preloader}/></div> : null }
+						{this.props.isFetching ? <Preloader/> : null}
 						<Users totalUsersCount={this.props.totalUsersCount}
 									 pageSize={this.props.pageSize}
 									 currentPage={this.props.currentPage}
@@ -59,29 +59,36 @@ let mapStateToProps = (state) => {
 		}
 }
 
-let mapDispatchToProps = (dispatch) => {
-		return {
-				follow: (userId) => {
-						dispatch(followActionCreator(userId));
-				},
-				unfollow: (userId) => {
-						dispatch(unfollowActionCreator(userId));
-				},
-				setUsers: (users) => {
-						dispatch(setUsersActionCreator(users));
-				},
-				setCurrentPage: (pageNumber) => {
-						dispatch(setCurrentPageActionCreator(pageNumber))
-				},
-				setTotalUsersCount: (totalCount) => {
-						dispatch(setUsersTotalCount(totalCount))
-				},
-				toggleIsFetching: (isFetching) => {
-						dispatch(toggleIsFetchingActionCreator(isFetching))
-				}
 
-		}
-}
+export default connect(mapStateToProps, {
+		follow,
+		unfollow,
+		setUsers,
+		setCurrentPage,
+		setTotalUsersCount,
+		toggleIsFetching
+})(UsersContainer);
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(UsersContainer);
+// let mapDispatchToProps = (dispatch) => {
+// 		return {
+// 				follow: (userId) => {
+// 						dispatch(followActionCreator(userId));
+// 				},
+// 				unfollow: (userId) => {
+// 						dispatch(unfollowActionCreator(userId));
+// 				},
+// 				setUsers: (users) => {
+// 						dispatch(setUsersActionCreator(users));
+// 				},
+// 				setCurrentPage: (pageNumber) => {
+// 						dispatch(setCurrentPageActionCreator(pageNumber));
+// 				},
+// 				setTotalUsersCount: (totalCount) => {
+// 						dispatch(setUsersTotalCount(totalCount));
+// 				},
+// 				toggleIsFetching: (isFetching) => {
+// 						dispatch(toggleIsFetchingActionCreator(isFetching));
+// 				}
+// 		}
+// }

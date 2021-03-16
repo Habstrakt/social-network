@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="Create Users Reducer">
-      <change afterPath="$PROJECT_DIR$/src/assets/img/avatar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/img/preloader.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/Users.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/users/UsersFunction.jsx" afterDir="false" />
+    <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="Added Preloader">
+      <change afterPath="$PROJECT_DIR$/src/components/common/preloader/Preloader.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile/ProfileContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/nav/NavItem/NavItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/nav/NavItem/NavItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/preloader/Preloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/preloader/Preloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/UsersFunction.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/UsersFunction(old).jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,6 +39,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
+  </component>
   <component name="ProjectId" id="1oQT390Wsr3apo5VazktQuW8j7h" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -53,7 +55,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/users" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/profile" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -68,11 +70,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\profile" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\users" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\redux" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\nav" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\dialogs" />
-      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\profile\MyPosts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\assets\img" />
@@ -102,7 +104,9 @@
       <workItem from="1615001363701" duration="2743000" />
       <workItem from="1615271171632" duration="8130000" />
       <workItem from="1615359894085" duration="9842000" />
-      <workItem from="1615639467607" duration="6671000" />
+      <workItem from="1615639467607" duration="9406000" />
+      <workItem from="1615706479318" duration="8377000" />
+      <workItem from="1615881171846" duration="3367000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1614683151926</created>
@@ -125,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615272202473</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Preloader">
+      <created>1615650196553</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615650196553</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +159,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="react-redux refactoring" />
     <MESSAGE value="Create Users Reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Users Reducer" />
+    <MESSAGE value="Added Preloader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Preloader" />
   </component>
 </project>

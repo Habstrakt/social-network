@@ -3,13 +3,13 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css';
 
 import Header from './components/header/Header';
-import Profile from "./components/profile/Profile";
 import News from "./components/news/News";
 import Music from "./components/music/Music";
 import Settings from "./components/settings/Settings";
 import DialogsContainer from "./components/dialogs/DialogsContainer";
 import SidebarContainer from "./components/nav/NavContainer";
 import UsersContainer from "./components/users/UsersContainer";
+import ProfileContainer from "./components/profile/ProfileContainer";
 
 
 
@@ -20,8 +20,8 @@ const App = (props) => {
 								<Header/>
 								<SidebarContainer />
 								<div className='app-wrapper-content'>
-										<Route path='/profile'
-													 render= { () => <Profile /> }/>
+										<Route path='/profile/:userId?'
+													 render= { () => <ProfileContainer /> }/>
 										<Route path='/dialogs'
 													 render= { () => <DialogsContainer/> }/>
 										<Route path='/users'
