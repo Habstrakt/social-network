@@ -1,6 +1,7 @@
 import React from "react";
 import styleProfileInfo from './ProfileInfo.module.css';
 import Preloader from "../../common/preloader/Preloader";
+import ProfileStatus from "./ProfileStatus";
 
 const ProfileInfo = (props) => {
 
@@ -9,11 +10,12 @@ const ProfileInfo = (props) => {
 		}
 		return (
 				<div>
-						<div>
-								<img src="https://gutta.lv/wp-content/uploads/2015/10/test-img.jpg" alt="" />
-						</div>
+						{/*<div>*/}
+						{/*		<img src="https://gutta.lv/wp-content/uploads/2015/10/test-img.jpg" alt="" />*/}
+						{/*</div>*/}
 						<div className={styleProfileInfo.descrBlog}>
 								<img src={props.profile.photos.large} alt=""/>
+								<ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
 						</div>
 						<a>{props.profile.contacts.vk}</a>
 						<p>{props.profile.lookingForAJobDescription}</p>

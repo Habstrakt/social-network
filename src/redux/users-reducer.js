@@ -62,12 +62,9 @@ const usersReducer = (state = initialState, action) => {
 										: state.followingInProgress.filter(id => id != action.userId)
 						}
 				}
-
 				default:
 						return state;
 		}
-
-		//return state; if else
 }
 
 export const followSuccess = (userId) => ({type: FOLLOW, userId })
