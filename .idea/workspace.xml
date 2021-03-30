@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="redux-form">
+    <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="stopSubmit">
+      <change afterPath="$PROJECT_DIR$/src/redux/app-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/FormsControl/FormsControls.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormsControl/FormsControls.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/HeaderContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/common/FormsControl" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -60,9 +68,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\redux" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\common\FormsControl" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\header" />
-      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\redux" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\profile" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\users" />
     </key>
@@ -106,7 +114,7 @@
       <workItem from="1616746228957" duration="3280000" />
       <workItem from="1616754875476" duration="10977000" />
       <workItem from="1617034700916" duration="2798000" />
-      <workItem from="1617075456019" duration="3669000" />
+      <workItem from="1617075456019" duration="12150000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1614683151926</created>
@@ -171,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617035631797</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="stopSubmit">
+      <created>1617085963068</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617085963069</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +215,7 @@
     <MESSAGE value="button disabled" />
     <MESSAGE value="thunk 1" />
     <MESSAGE value="redux-form" />
-    <option name="LAST_COMMIT_MESSAGE" value="redux-form" />
+    <MESSAGE value="stopSubmit" />
+    <option name="LAST_COMMIT_MESSAGE" value="stopSubmit" />
   </component>
 </project>
