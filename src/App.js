@@ -1,7 +1,6 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, withRouter} from 'react-router-dom';
+import {Route, withRouter} from 'react-router-dom';
 import './App.css';
-
 
 import News from "./components/news/News";
 import Music from "./components/music/Music";
