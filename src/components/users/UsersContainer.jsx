@@ -19,7 +19,6 @@ import {
 } from "../../redux/users-selectors";
 
 
-
 class UsersContainer extends React.Component {
 		componentDidMount() {
 				this.props.getUsers(this.props.currentPage, this.props.pageSize);

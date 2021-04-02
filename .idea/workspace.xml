@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="ProfileStatus change class to function component">
-      <change afterPath="$PROJECT_DIR$/src/redux/profile-reducer.test.js" afterDir="false" />
+    <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="refactoring user reducer">
+      <change afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/User.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/object-helpers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/MyPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/MyPosts/MyPosts.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Profile.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileStatusWithHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileStatusWithHooks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/auth-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/auth-reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/FormsControl/FormsControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/FormsControl/FormsControls.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/Users.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -52,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/users" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -68,13 +70,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\users" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\redux" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\profile\ProfileInfo" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\common\FormsControl" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\header" />
-      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\profile" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\common\Paginator" />
+      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\common" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\assets\img" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\profile" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\profile\MyPosts" />
@@ -192,7 +196,7 @@
       <workItem from="1617034700916" duration="2798000" />
       <workItem from="1617075456019" duration="21940000" />
       <workItem from="1617288968130" duration="1040000" />
-      <workItem from="1617360484124" duration="12743000" />
+      <workItem from="1617360484124" duration="17666000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1614683151926</created>
@@ -292,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617120101616</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactoring user reducer">
+      <created>1617394147795</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1617394147795</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,6 +337,7 @@
     <MESSAGE value="reselect" />
     <MESSAGE value="reselect library" />
     <MESSAGE value="ProfileStatus change class to function component" />
-    <option name="LAST_COMMIT_MESSAGE" value="ProfileStatus change class to function component" />
+    <MESSAGE value="refactoring user reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring user reducer" />
   </component>
 </project>
