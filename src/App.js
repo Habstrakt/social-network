@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, withRouter} from 'react-router-dom';
+import {BrowserRouter as Router, Route, withRouter} from 'react-router-dom';
 import './App.css';
 
 import News from "./components/news/News";
@@ -11,10 +11,12 @@ import UsersContainer from "./components/users/UsersContainer";
 import ProfileContainer from "./components/profile/ProfileContainer";
 import HeaderContainer from "./components/header/HeaderContainer";
 import LoginPage from "./components/login/Login";
-import {connect} from "react-redux";
+import {connect, Provider} from "react-redux";
 import {compose} from "redux";
 import {initializeApp} from "./redux/app-reducer";
 import Preloader from "./components/common/preloader/Preloader";
+import store from "./redux/redux-store";
+import {BrowserRouter} from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -55,6 +57,20 @@ const mapStateToProps = (state) => ({
 		initialized: state.app.initialized
 })
 
-export default compose(
+const AppContainer = compose(
 		withRouter,
 		connect(mapStateToProps, {initializeApp})) (App);
+
+const MainApp = (props) => {
+		return (
+				<React.StrictMode>
+						<BrowserRouter>
+								<Provider store={store}>
+										<AppContainer />
+								</Provider>
+						</BrowserRouter>
+				</React.StrictMode>
+		)
+}
+
+export default  MainApp
