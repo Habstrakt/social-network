@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="refactoring user reducer">
-      <change afterPath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileStatus.test.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Paginator/Paginator.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileStatus.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileStatus.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/profile/ProfileInfo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hoc" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -72,11 +61,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\hoc" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\profile\ProfileInfo" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\users" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\redux" />
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\common\FormsControl" />
-      <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\kukuruza\Desktop\react\social-network\src\components\common\Paginator" />
@@ -200,7 +189,7 @@
       <workItem from="1617075456019" duration="21940000" />
       <workItem from="1617288968130" duration="1040000" />
       <workItem from="1617360484124" duration="17666000" />
-      <workItem from="1617422002881" duration="9303000" />
+      <workItem from="1617422002881" duration="13505000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1614683151926</created>
@@ -307,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617394147795</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="рефакторинг пагинации и провал с написанием тестов">
+      <created>1617456596584</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1617456596584</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,6 +338,7 @@
     <MESSAGE value="reselect library" />
     <MESSAGE value="ProfileStatus change class to function component" />
     <MESSAGE value="refactoring user reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring user reducer" />
+    <MESSAGE value="рефакторинг пагинации и провал с написанием тестов" />
+    <option name="LAST_COMMIT_MESSAGE" value="рефакторинг пагинации и провал с написанием тестов" />
   </component>
 </project>
