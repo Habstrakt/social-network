@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="refactoring user reducer">
+    <list default="true" id="bc41062d-36f6-4c37-b079-7923402ce761" name="Default Changelist" comment="Две компоненты добавил в React.lazy(обернул в suspense)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileInfo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileInfo/ProfileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profile-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profile-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +194,8 @@
       <workItem from="1617075456019" duration="21940000" />
       <workItem from="1617288968130" duration="1040000" />
       <workItem from="1617360484124" duration="17666000" />
-      <workItem from="1617422002881" duration="13505000" />
+      <workItem from="1617422002881" duration="14065000" />
+      <workItem from="1617694329917" duration="6879000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1614683151926</created>
@@ -303,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617456596584</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Две компоненты добавил в React.lazy(обернул в suspense)">
+      <created>1617461317282</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1617461317282</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +352,7 @@
     <MESSAGE value="ProfileStatus change class to function component" />
     <MESSAGE value="refactoring user reducer" />
     <MESSAGE value="рефакторинг пагинации и провал с написанием тестов" />
-    <option name="LAST_COMMIT_MESSAGE" value="рефакторинг пагинации и провал с написанием тестов" />
+    <MESSAGE value="Две компоненты добавил в React.lazy(обернул в suspense)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Две компоненты добавил в React.lazy(обернул в suspense)" />
   </component>
 </project>

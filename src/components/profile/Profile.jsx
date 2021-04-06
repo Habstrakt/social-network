@@ -7,7 +7,10 @@ const Profile = (props) => {
 
 		return (
 				<section>
-						<ProfileInfo profile={props.profile} status={props.status} updateStatus={props.updateStatus}/>
+						<ProfileInfo profile={props.profile} status={props.status}
+												 isOwner={props.isOwner}
+												 updateStatus={props.updateStatus}
+												 savePhoto={props.savePhoto}/>
 						<MyPostsContainer />
 				</section>
 
